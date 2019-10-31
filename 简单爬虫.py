@@ -15,7 +15,7 @@ opener=urllib.request.build_opener()
 opener.addheaders=[header]
 
 #读取数据
-data=opener.open("https://read.douban.com/provider/all").read().decode("utf-8")
+data=opener.open("https://read.douban.com/provider/all",timeout=1).read().decode("utf-8")
 
 
 #正则项
